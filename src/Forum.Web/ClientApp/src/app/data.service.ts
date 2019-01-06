@@ -20,4 +20,8 @@ export class DataService {
     return this.http.get('https://jsonplaceholder.typicode.com/posts')
   }
 
+  getControllerData() {
+    return this.http.get("https://localhost:44358/api/SampleData/WeatherForecasts")
+  }
+
 }

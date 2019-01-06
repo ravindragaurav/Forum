@@ -10,15 +10,23 @@ import { Observable} from 'rxjs'; //wut is dis?
 
 export class UsersComponent implements OnInit {
 
- users$: Object;
+  users$: Object;
 
-
-  constructor(private data:DataService) { }
+  constructor(private data: DataService) {
+    this.getLocalControllerData();
+  }
 
   ngOnInit() { //one of several angular lifecycle hooks, code executed when component loads
     this.data.getUsers().subscribe(
       data => this.users$ = data
     )
+  }
+
+
+  getLocalControllerData() {
+    console.log("calling getLocalControllerData from constructor");
+
+    return this.data.getControllerData().subscribe(response => console.log(response));
   }
 
 }
