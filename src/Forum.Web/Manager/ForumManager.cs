@@ -13,7 +13,6 @@ namespace Forum.Web.Manager
             _forumService = forumService;
         }
 
-
         public List<Question> GetQuestions()
         {
             return _forumService.GetQuestions();

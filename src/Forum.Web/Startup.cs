@@ -1,6 +1,10 @@
+using Forum.Domain.Config;
+using Forum.Domain.Wrapper.Dapper;
+using Forum.Web.Manager;
+using Forum.Web.Repository;
+using Forum.Web.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
@@ -27,7 +31,10 @@ namespace Forum.Web
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+
+            ConfigureIoC(services);
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -65,6 +72,17 @@ namespace Forum.Web
                     spa.UseAngularCliServer(npmScript: "start");
                 }
             });
+        }
+
+        public void ConfigureIoC(IServiceCollection services)
+        {
+            services.AddTransient<IConfig, Config.Config>();
+            services.AddTransient<IForumManager, ForumManager>();
+            services.AddTransient<IForumService, ForumService>();
+            services.AddTransient<IForumRepository, ForumRepository>();
+
+            services.AddTransient<IDapperWrapper, DapperWrapper>();
+
         }
     }
 }
