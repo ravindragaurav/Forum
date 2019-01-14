@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {UsersComponent} from './users/users.component';
-import {DetailsComponent} from './details/details.component';
-import {PostsComponent} from './posts/posts.component';
-import {AskquestionComponent} from './askquestion/askquestion.component';
+import { UsersComponent } from './users/users.component';
+import { DetailsComponent } from './details/details.component';
+import { PostsComponent } from './posts/posts.component';
+import { AskquestionComponent } from './askquestion/askquestion.component';
+import { QuestionlistComponent } from './questionlist/questionlist.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'askquestion',
     component: AskquestionComponent
+  },
+  {
+    path: 'questionlist',
+    component: QuestionlistComponent
   }
 ];
 

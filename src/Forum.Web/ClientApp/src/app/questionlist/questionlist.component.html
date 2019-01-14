@@ -1,0 +1,7 @@
+<h1>Latest Questions</h1>
+<ul>
+  <li *ngFor="let question of questionsList$">
+    <h3> {{ question.questionTitle }}</h3>
+    <p>{{ question.questionDetails }}</p>
+  </li>
+</ul>

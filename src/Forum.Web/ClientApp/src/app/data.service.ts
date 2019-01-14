@@ -24,4 +24,8 @@ export class DataService {
     return this.http.get("https://localhost:44358/api/SampleData/WeatherForecasts")
   }
 
+  getQuestions() {
+    return this.http.get("https://localhost:44358/forum/getquestions")
+  }
+
 }
