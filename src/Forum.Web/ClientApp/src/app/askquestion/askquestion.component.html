@@ -1,7 +1,7 @@
 <h1>Ask Questions</h1>
 
 
-<div class="container">
+<!-- <div class="container">
     <h1>Question Form</h1>
     <form  (ngSubmit)="askQuestion()"> 
       <div class="form-group">
@@ -18,4 +18,35 @@
  
     </form>
 </div>
-  
+   -->
+
+
+<div class="jumbotron">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 offset-md-2">
+              <h3>Ask Your Question</h3>
+              <form name="form" (ngSubmit)="askQuestion()" #f="ngForm" novalidate>
+                  <div class="form-group">
+                      <label for="questionTitle">Question Title</label>
+                      <input type="text" class="form-control" name="questionTitle" [(ngModel)]="model.questionTitle" #questionTitle="ngModel" [ngClass]="{ 'is-invalid': f.submitted && questionTitle.invalid }" required />
+                      <div *ngIf="f.submitted && questionTitle.invalid" class="invalid-feedback">
+                          <div *ngIf="questionTitle.errors.required">Question Title is required</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="questionDetails">Question Details</label>
+                      <input type="text" class="form-control" name="questionDetails" [(ngModel)]="model.questionDetails" #questionDetails="ngModel" [ngClass]="{ 'is-invalid': f.submitted && questionDetails.invalid }" required />
+                      <div *ngIf="f.submitted && questionDetails.invalid" class="invalid-feedback">
+                          <div *ngIf="questionDetails.errors.required">Last Name is required</div>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                      <button class="btn btn-primary">Ask Question</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>

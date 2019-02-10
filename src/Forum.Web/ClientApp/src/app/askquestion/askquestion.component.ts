@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { DataService } from '../data.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { DataService } from '../data.service';
 export class AskquestionComponent implements OnInit {
   questionTitle$ : string
   questionDetails$ : string
+  model: any = {};
 
 
   constructor(private data : DataService) { }
@@ -16,10 +18,10 @@ export class AskquestionComponent implements OnInit {
   ngOnInit() {
   }
 
-  askQuestion(questionTitle, questionDetails){
-    this.questionTitle$ = questionTitle.value();
-    alert("question Title is : "+this.questionTitle$ + " and question details is :"+this.questionDetails$ );
-    this.data.postQuestion(this.questionTitle$, this.questionDetails$);
+  askQuestion(){
+    
+    alert("question Title is : "+this.model.questionTitle + " and question details is :"+this.model.questionDetails );
+    this.data.postQuestion(this.model.questionTitle, this.model.questionTitle).subscribe();
   }
 
 }
