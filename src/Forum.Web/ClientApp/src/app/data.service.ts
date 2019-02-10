@@ -28,4 +28,8 @@ export class DataService {
     return this.http.get("https://localhost:44358/forum/getquestions")
   }
 
+  postQuestion(questionTitle, questionDetails) {
+    return this.http.get("https://localhost:44358/forum/postquestion?questionTitle=" + questionTitle + "&questionDetails=" + questionDetails)
+  }
+
 }

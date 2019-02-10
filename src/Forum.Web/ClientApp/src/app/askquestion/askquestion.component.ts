@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-askquestion',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./askquestion.component.scss']
 })
 export class AskquestionComponent implements OnInit {
+  questionTitle$ : string
+  questionDetails$ : string
 
-  constructor() { }
+
+  constructor(private data : DataService) { }
 
   ngOnInit() {
+  }
+
+  askQuestion(questionTitle, questionDetails){
+    this.questionTitle$ = questionTitle.value();
+    alert("question Title is : "+this.questionTitle$ + " and question details is :"+this.questionDetails$ );
+    this.data.postQuestion(this.questionTitle$, this.questionDetails$);
   }
 
 }
