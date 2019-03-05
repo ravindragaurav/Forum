@@ -154,18 +154,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sidebar/sidebar.component */ "./src/app/sidebar/sidebar.component.ts");
-/* harmony import */ var _posts_posts_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./posts/posts.component */ "./src/app/posts/posts.component.ts");
-/* harmony import */ var _users_users_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./users/users.component */ "./src/app/users/users.component.ts");
-/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
-/* harmony import */ var _askquestion_askquestion_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./askquestion/askquestion.component */ "./src/app/askquestion/askquestion.component.ts");
-/* harmony import */ var _questionlist_questionlist_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./questionlist/questionlist.component */ "./src/app/questionlist/questionlist.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _matetial__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./matetial */ "./src/app/matetial.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sidebar/sidebar.component */ "./src/app/sidebar/sidebar.component.ts");
+/* harmony import */ var _posts_posts_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./posts/posts.component */ "./src/app/posts/posts.component.ts");
+/* harmony import */ var _users_users_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./users/users.component */ "./src/app/users/users.component.ts");
+/* harmony import */ var _details_details_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./details/details.component */ "./src/app/details/details.component.ts");
+/* harmony import */ var _askquestion_askquestion_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./askquestion/askquestion.component */ "./src/app/askquestion/askquestion.component.ts");
+/* harmony import */ var _questionlist_questionlist_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./questionlist/questionlist.component */ "./src/app/questionlist/questionlist.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 
 
 
+
+
+ //this is the class that contains all the angular material components
 
 
 
@@ -181,21 +187,25 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"],
-                _sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_5__["SidebarComponent"],
-                _posts_posts_component__WEBPACK_IMPORTED_MODULE_6__["PostsComponent"],
-                _users_users_component__WEBPACK_IMPORTED_MODULE_7__["UsersComponent"],
-                _details_details_component__WEBPACK_IMPORTED_MODULE_8__["DetailsComponent"],
-                _askquestion_askquestion_component__WEBPACK_IMPORTED_MODULE_9__["AskquestionComponent"],
-                _questionlist_questionlist_component__WEBPACK_IMPORTED_MODULE_10__["QuestionlistComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"],
+                _sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_8__["SidebarComponent"],
+                _posts_posts_component__WEBPACK_IMPORTED_MODULE_9__["PostsComponent"],
+                _users_users_component__WEBPACK_IMPORTED_MODULE_10__["UsersComponent"],
+                _details_details_component__WEBPACK_IMPORTED_MODULE_11__["DetailsComponent"],
+                _askquestion_askquestion_component__WEBPACK_IMPORTED_MODULE_12__["AskquestionComponent"],
+                _questionlist_questionlist_component__WEBPACK_IMPORTED_MODULE_13__["QuestionlistComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_14__["HttpClientModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"],
+                _matetial__WEBPACK_IMPORTED_MODULE_5__["MaterialModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -212,7 +222,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  askquestion works!\n</p>\n"
+module.exports = "<h1>Ask Questions</h1>\n\n\n<!-- <div class=\"container\">\n    <h1>Question Form</h1>\n    <form  (ngSubmit)=\"askQuestion()\"> \n      <div class=\"form-group\">\n        <label for=\"questionTitle\">Question Title</label>\n        <input type=\"text\" class=\"form-control\" id=\"questionTitle\">\n      </div>\n \n      <div class=\"form-group\">\n        <label for=\"questionDetails\">Question Details</label>\n        <input type=\"text\" class=\"form-control\" id=\"questionDetails\">\n      </div>\n \n      <button type=\"submit\" onclick=\"askQuestion()\" class=\"btn btn-success\">Submit</button>\n \n    </form>\n</div>\n   -->\n\n\n<div class=\"jumbotron\">\n  <div class=\"container\">\n      <div class=\"row\">\n          <div class=\"col-md-8 offset-md-2\">\n              <h3>Ask Your Question</h3>\n              <form name=\"form\" (ngSubmit)=\"askQuestion()\" #f=\"ngForm\" novalidate>\n                  <div class=\"form-group\">\n                      <label for=\"questionTitle\">Question Title</label>\n                      <input type=\"text\" class=\"form-control\" name=\"questionTitle\" [(ngModel)]=\"model.questionTitle\" #questionTitle=\"ngModel\" [ngClass]=\"{ 'is-invalid': f.submitted && questionTitle.invalid }\" required />\n                      <div *ngIf=\"f.submitted && questionTitle.invalid\" class=\"invalid-feedback\">\n                          <div *ngIf=\"questionTitle.errors.required\">Question Title is required</div>\n                      </div>\n                  </div>\n                  <div class=\"form-group\">\n                      <label for=\"questionDetails\">Question Details</label>\n                      <input type=\"text\" class=\"form-control\" name=\"questionDetails\" [(ngModel)]=\"model.questionDetails\" #questionDetails=\"ngModel\" [ngClass]=\"{ 'is-invalid': f.submitted && questionDetails.invalid }\" required />\n                      <div *ngIf=\"f.submitted && questionDetails.invalid\" class=\"invalid-feedback\">\n                          <div *ngIf=\"questionDetails.errors.required\">Last Name is required</div>\n                      </div>\n                  </div>\n\n                  <div class=\"form-group\">\n                      <button class=\"btn btn-primary\">Ask Question</button>\n                  </div>\n              </form>\n          </div>\n      </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -239,12 +249,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AskquestionComponent", function() { return AskquestionComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../data.service */ "./src/app/data.service.ts");
+
 
 
 var AskquestionComponent = /** @class */ (function () {
-    function AskquestionComponent() {
+    function AskquestionComponent(data) {
+        this.data = data;
+        this.model = {};
     }
     AskquestionComponent.prototype.ngOnInit = function () {
+    };
+    AskquestionComponent.prototype.askQuestion = function () {
+        alert("question Title is : " + this.model.questionTitle + " and question details is :" + this.model.questionDetails);
+        this.data.postQuestion(this.model.questionTitle, this.model.questionTitle).subscribe();
     };
     AskquestionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -252,7 +270,7 @@ var AskquestionComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./askquestion.component.html */ "./src/app/askquestion/askquestion.component.html"),
             styles: [__webpack_require__(/*! ./askquestion.component.scss */ "./src/app/askquestion/askquestion.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
     ], AskquestionComponent);
     return AskquestionComponent;
 }());
@@ -295,6 +313,9 @@ var DataService = /** @class */ (function () {
     };
     DataService.prototype.getQuestions = function () {
         return this.http.get("https://localhost:44358/forum/getquestions");
+    };
+    DataService.prototype.postQuestion = function (questionTitle, questionDetails) {
+        return this.http.get("https://localhost:44358/forum/postquestion?questionTitle=" + questionTitle + "&questionDetails=" + questionDetails);
     };
     DataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
@@ -369,6 +390,38 @@ var DetailsComponent = /** @class */ (function () {
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"]])
     ], DetailsComponent);
     return DetailsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/matetial.ts":
+/*!*****************************!*\
+  !*** ./src/app/matetial.ts ***!
+  \*****************************/
+/*! exports provided: MaterialModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MaterialModule", function() { return MaterialModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+
+var MaterialModule = /** @class */ (function () {
+    function MaterialModule() {
+    }
+    MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+            imports: [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatCheckboxModule"]],
+            exports: [_angular_material__WEBPACK_IMPORTED_MODULE_1__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_1__["MatCheckboxModule"]]
+        })
+    ], MaterialModule);
+    return MaterialModule;
 }());
 
 
@@ -665,6 +718,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! hammerjs */ "./node_modules/hammerjs/hammer.js");
+/* harmony import */ var hammerjs__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(hammerjs__WEBPACK_IMPORTED_MODULE_4__);
+
 
 
 
